@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .background-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .color1 {
+    background-color: #ff0000; /* First background color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .color2 {
+    background-color: #00ff00; /* Second background color */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above the background colors */
+  }
+  
+  .video-container video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
